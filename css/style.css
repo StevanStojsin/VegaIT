@@ -1,0 +1,682 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato-Regular.ttf);
+  font-style: normal;
+  font-weight: 400; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato-Light.ttf);
+  font-style: normal;
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato-LightItalic.ttf);
+  font-style: italic;
+  font-weight: 300; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato-Bold.ttf);
+  font-style: normal;
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato-BoldItalic.ttf);
+  font-style: italic;
+  font-weight: 700; }
+
+@font-face {
+  font-family: 'Lato';
+  src: url(../fonts/Lato-Black.ttf);
+  font-style: normal;
+  font-weight: 900; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+li {
+  list-style: none; }
+
+.redWord {
+  color: #d70826; }
+
+.active {
+  border-bottom: 1px solid black; }
+
+.cursorPointer {
+  cursor: pointer; }
+
+.emptySpase {
+  width: 20px; }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  position: relative; }
+
+header {
+  position: relative;
+  border-top: 5px solid black;
+  text-transform: uppercase; }
+  header #hamburger, header #close {
+    display: none; }
+  header .top-nav {
+    text-align: right;
+    width: 100%;
+    padding-top: 20px; }
+    header .top-nav ul {
+      padding-right: 20px; }
+      header .top-nav ul li {
+        display: inline-block;
+        padding: 0px 10px; }
+        header .top-nav ul li a {
+          display: block;
+          font-size: 10px;
+          letter-spacing: 1.5px;
+          color: black; }
+  header .logo {
+    width: 334px;
+    margin: 10px auto;
+    padding-bottom: 10px; }
+    header .logo img {
+      width: 100%; }
+  header .main {
+    font-weight: 700;
+    font-size: 11px; }
+    header .main ul {
+      text-align: center; }
+      header .main ul li {
+        display: inline-block;
+        padding: 0px 18px 15px 18px; }
+        header .main ul li:hover a {
+          border-bottom: 1px solid black; }
+        header .main ul li a {
+          display: block;
+          color: black;
+          letter-spacing: 3px;
+          padding-bottom: 20px;
+          border-bottom: 1px solid transparent;
+          transition: all .5s; }
+
+.subHeader {
+  display: none;
+  width: 100%;
+  z-index: 10;
+  position: absolute;
+  top: 155px;
+  left: 0;
+  height: 330px;
+  padding: 40px 0;
+  background-color: white;
+  text-align: left; }
+  .subHeader .subHeader-container {
+    z-index: 11;
+    width: 73%;
+    margin: 0 auto;
+    background-color: white; }
+    .subHeader .subHeader-container .women-items {
+      display: flex;
+      justify-content: space-between; }
+      .subHeader .subHeader-container .women-items li {
+        padding: 0;
+        display: inline; }
+        .subHeader .subHeader-container .women-items li a {
+          font-size: 12px;
+          font-weight: 400;
+          color: black;
+          text-transform: initial;
+          letter-spacing: initial;
+          padding: 3px 0;
+          border-bottom: none; }
+          .subHeader .subHeader-container .women-items li a:hover {
+            color: #a0a0a0;
+            border-bottom: none; }
+        .subHeader .subHeader-container .women-items li ol li h4 {
+          font-size: 10px;
+          font-weight: 900;
+          text-transform: uppercase;
+          letter-spacing: 3px;
+          cursor: default;
+          padding-bottom: 3px; }
+        .subHeader .subHeader-container .women-items li ol li .marginBottom26px {
+          margin-bottom: 26px; }
+
+.marginTop5px {
+  margin-top: 5px; }
+
+.marginTop1px {
+  margin-top: 1px; }
+
+.promo-banner {
+  position: relative; }
+  .promo-banner img {
+    width: 100%; }
+  .promo-banner .lorem-h {
+    position: absolute;
+    top: 37%;
+    left: 0;
+    right: 0;
+    text-shadow: 0px 1px 1px rgba(2, 2, 2, 0.35);
+    text-align: center;
+    color: white;
+    letter-spacing: 8px; }
+    .promo-banner .lorem-h h1 {
+      font-size: 124px;
+      text-transform: uppercase;
+      font-weight: 400;
+      padding-bottom: 10px; }
+    .promo-banner .lorem-h p {
+      font-size: 35px; }
+      .promo-banner .lorem-h p span {
+        font-size: 16px;
+        letter-spacing: 4px; }
+
+.container {
+  width: 85%;
+  margin: 0 auto; }
+
+.products {
+  margin-top: 30px; }
+  .products h2 {
+    font-weight: 300;
+    font-size: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 10px; }
+  .products .products-images {
+    display: flex;
+    justify-content: space-between; }
+    .products .products-images figure {
+      width: 32%;
+      text-align: center; }
+      .products .products-images figure img {
+        width: 100%; }
+      .products .products-images figure figcaption {
+        font-weight: 400; }
+        .products .products-images figure figcaption del {
+          font-size: 12px; }
+        .products .products-images figure figcaption span {
+          font-size: 14px; }
+      .products .products-images figure .fweight300 {
+        font-weight: 300;
+        text-transform: uppercase; }
+
+.textTitle h2 {
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin: 50px 0 20px 0; }
+
+.textTitle p {
+  font-size: 14px;
+  line-height: 1.4em; }
+
+.textTitle ul {
+  margin-left: 49px; }
+  .textTitle ul li {
+    font-size: 14px;
+    list-style: inside;
+    padding-bottom: 5px; }
+    .textTitle ul li:last-child {
+      padding-bottom: 0; }
+
+.moreProducts h2 {
+  font-weight: 300;
+  font-size: 22px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin: 50px 0 30px 0; }
+
+.moreProducts .moreProductsAll {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .moreProducts .moreProductsAll #jsonSlider {
+    display: flex;
+    justify-content: space-around; }
+    .moreProducts .moreProductsAll #jsonSlider div {
+      width: 23%;
+      text-align: center; }
+      .moreProducts .moreProductsAll #jsonSlider div img {
+        width: 100%; }
+      .moreProducts .moreProductsAll #jsonSlider div p {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 10px 0; }
+  .moreProducts .moreProductsAll button {
+    cursor: pointer;
+    font-size: 30px;
+    font-weight: 900;
+    border-radius: 50%;
+    border: none;
+    padding: 0 14px 0 11px;
+    color: white;
+    background-color: #c2c1c1;
+    transition: all .5s; }
+    .moreProducts .moreProductsAll button:hover {
+      background-color: black; }
+  .moreProducts .moreProductsAll #rightArrow {
+    padding: 0 12px 0 13px; }
+
+.form {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .form .login {
+    min-width: 430px; }
+    .form .login h3 {
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: 4px;
+      text-transform: uppercase; }
+    .form .login form {
+      margin-top: 20px; }
+      .form .login form div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        .form .login form div label {
+          font-size: 9.99px;
+          font-weight: 900;
+          letter-spacing: 2px;
+          text-transform: uppercase; }
+        .form .login form div input {
+          font-size: 12px;
+          font-weight: 700;
+          font-style: italic;
+          color: #747474;
+          padding: 5px;
+          width: 250px; }
+      .form .login form p {
+        font-size: 9px;
+        color: #d70826;
+        text-align: right;
+        letter-spacing: 1px; }
+      .form .login form .radioButton {
+        margin-left: 4px;
+        font-size: 12px;
+        font-weight: 700;
+        cursor: pointer; }
+        .form .login form .radioButton .formSpan {
+          margin-left: 20px;
+          font-weight: 400; }
+      .form .login form button {
+        width: 100%;
+        font-size: 12px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 13px 0;
+        border-radius: 3px;
+        border: none;
+        background-color: black;
+        color: white;
+        cursor: pointer; }
+  .form .benefits {
+    background-color: #eeeeee;
+    width: 100%;
+    height: 100%;
+    margin-top: 15px;
+    line-height: 23px; }
+    .form .benefits h3 {
+      font-size: 12px;
+      letter-spacing: 4px;
+      font-weight: 900;
+      text-transform: uppercase;
+      text-align: center;
+      margin-bottom: 30px;
+      padding-top: 20px; }
+    .form .benefits p {
+      font-size: 12px;
+      padding: 0 20px; }
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+  footer nav {
+    width: 450px; }
+    footer nav ul {
+      display: flex;
+      justify-content: space-between; }
+      footer nav ul li a {
+        font-size: 8px;
+        color: #a0a0a0;
+        text-transform: uppercase; }
+  footer .newsletter {
+    width: 245px; }
+    footer .newsletter h4 {
+      font-size: 10px;
+      font-weight: 900;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+      padding: 10px 0; }
+    footer .newsletter div {
+      display: flex; }
+      footer .newsletter div input {
+        padding: 5px 10px;
+        font-size: 12px;
+        font-style: italic;
+        font-weight: 300;
+        flex: 1; }
+      footer .newsletter div button {
+        padding: 5px 8px;
+        background-color: black;
+        color: white;
+        font-size: 12px;
+        border: none; }
+
+@media only screen and (max-width: 1200px) {
+  .subHeader .subHeader-container {
+    width: 100%; }
+    .subHeader .subHeader-container .women-items {
+      justify-content: space-around; }
+  .form .benefits {
+    max-height: 405px;
+    overflow: scroll; } }
+
+@media only screen and (max-width: 768px) {
+  header {
+    border-top: none; }
+    header .top-nav {
+      padding-top: 0; }
+      header .top-nav ul li a {
+        font-size: 9.8px; }
+    header .logo {
+      padding: 30px 0 10px 0; }
+    header .main {
+      padding: 10px 0 0 0; }
+      header .main ul {
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around; }
+        header .main ul li {
+          padding: 0 0 20px 0; }
+          header .main ul li a {
+            letter-spacing: 2px; }
+  .subHeader {
+    top: 165px; }
+  .promoPic {
+    display: none; }
+  .promo-banner .lorem-h h1 {
+    font-size: 60px; }
+  .promo-banner .lorem-h p {
+    font-size: 16.8px; }
+    .promo-banner .lorem-h p span {
+      font-size: 7.6px;
+      letter-spacing: 4px; }
+  .container {
+    width: 93%; }
+  .moreProducts .moreProductsAll #jsonSlider div p {
+    font-size: 12px; }
+  .moreProducts .moreProductsAll button {
+    cursor: pointer;
+    font-size: 22px;
+    padding: 0 11px 0 9px; }
+  .moreProducts .moreProductsAll #rightArrow {
+    padding: 0 10px 0 10px; }
+  .form .login {
+    min-width: 310px; }
+    .form .login form div input {
+      width: 180px; }
+  footer {
+    flex-direction: column;
+    margin-bottom: 15px; }
+    footer nav {
+      width: 100%; }
+      footer nav ul {
+        justify-content: space-around; }
+        footer nav ul li a {
+          font-size: 11px;
+          letter-spacing: 2px; }
+    footer .newsletter {
+      width: 260px;
+      margin: 0 auto; }
+      footer .newsletter h4 {
+        padding: 20px 0;
+        font-size: 11px;
+        text-align: center; }
+      footer .newsletter div input {
+        font-size: 10.22px;
+        padding: 11px 10px;
+        border: 1px solid black;
+        border-radius: 3px 0 0 3px; }
+      footer .newsletter div button {
+        font-size: 11.5px;
+        padding: 11px 15px;
+        border-radius: 0 3px 3px 0; } }
+
+@media only screen and (max-width: 580px) {
+  header #hamburger {
+    display: block;
+    position: absolute;
+    z-index: 100;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-image: url("../img/hamburger.png");
+    background-size: cover; }
+  header .top-nav {
+    display: none; }
+  header .logo {
+    width: 70%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    padding-top: 15px; }
+    header .logo img {
+      width: 100%; }
+  header .main {
+    background-color: white;
+    position: absolute;
+    display: none;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2450px; }
+    header .main ul {
+      display: flex;
+      flex-direction: column;
+      text-align: left; }
+      header .main ul li {
+        padding: 0px 0px 0px 25px; }
+        header .main ul li:hover a {
+          border-bottom: 1px solid black; }
+        header .main ul li a {
+          color: black;
+          font-weight: 900;
+          padding: 8px 0;
+          border-bottom: 1px solid #c7c7c7; }
+  .subHeader {
+    display: none;
+    width: 100%;
+    z-index: 10;
+    position: relative;
+    top: 0;
+    height: 100%;
+    padding: 20px 0;
+    background-color: white;
+    text-align: left; }
+    .subHeader .subHeader-container {
+      z-index: 11;
+      width: 100%; }
+      .subHeader .subHeader-container .women-items {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .subHeader .subHeader-container .women-items li {
+          padding: 0;
+          display: inline; }
+          .subHeader .subHeader-container .women-items li a {
+            font-size: 12px;
+            font-weight: 400;
+            color: black;
+            padding: 8px 0 0 10px;
+            border-bottom: none; }
+            .subHeader .subHeader-container .women-items li a:hover {
+              color: #a0a0a0;
+              border-bottom: none; }
+            .subHeader .subHeader-container .women-items li a:last-child {
+              padding-bottom: 8px; }
+          .subHeader .subHeader-container .women-items li ol .empty {
+            display: none; }
+          .subHeader .subHeader-container .women-items li ol li h4 {
+            font-size: 10px;
+            font-weight: 700;
+            cursor: pointer;
+            padding: 8px 0;
+            border-bottom: 1px solid #c7c7c7; }
+          .subHeader .subHeader-container .women-items li ol li .marginBottom26px {
+            margin-bottom: 0;
+            color: black; }
+  .promo-banner .lorem-h h1 {
+    font-size: 25px; }
+  .promo-banner .lorem-h p {
+    font-size: 16.8px;
+    letter-spacing: 5px; }
+    .promo-banner .lorem-h p span {
+      font-size: 10px;
+      letter-spacing: 3px; }
+  .textTitle ul li {
+    list-style: outside; }
+  .moreProducts .moreProductsAll #jsonSlider div {
+    width: 40%; }
+    .moreProducts .moreProductsAll #jsonSlider div p {
+      font-size: 11px; }
+  .form {
+    flex-direction: column; }
+    .form .login {
+      min-width: 100%; }
+    .form .emptySpase {
+      display: none; }
+    .form .benefits {
+      max-height: 200px; }
+  .hr-none {
+    display: none; }
+  footer {
+    flex-direction: column-reverse; }
+    footer nav {
+      margin-top: 20px; }
+      footer nav ul {
+        justify-content: flex-start;
+        flex-wrap: wrap; }
+        footer nav ul li a {
+          font-size: 8px; }
+        footer nav ul li:first-child {
+          padding-right: 20px; }
+        footer nav ul li:nth-child(2) {
+          padding-right: 30px; }
+    footer .newsletter h4 {
+      font-size: 10px;
+      letter-spacing: 3px;
+      padding: 10px 0; }
+    footer .newsletter div input {
+      padding: 10px 15px;
+      font-size: 12px;
+      border-radius: 6px 0 0 6px;
+      border-color: #a0a0a0; }
+    footer .newsletter div button {
+      padding: 5px 10px;
+      font-size: 12px;
+      font-weight: 700;
+      border-radius: 0 6px 6px 0; } }
+
+@media only screen and (max-width: 330px) {
+  .promo-banner .lorem-h h1 {
+    font-size: 15px;
+    letter-spacing: 5px;
+    padding-bottom: 3px; }
+  .promo-banner .lorem-h p {
+    font-size: 13px; }
+    .promo-banner .lorem-h p span {
+      font-size: 9px;
+      letter-spacing: 2px; }
+  .products h2 {
+    font-size: 15px;
+    padding-bottom: 20px; }
+  .products .products-images {
+    flex-direction: column;
+    align-items: center; }
+    .products .products-images figure {
+      width: 70%;
+      padding-top: 30px; }
+      .products .products-images figure:first-child {
+        padding-top: 0; }
+      .products .products-images figure figcaption del {
+        font-size: 10px; }
+      .products .products-images figure figcaption span {
+        font-size: 13px; }
+      .products .products-images figure .fweight300 {
+        font-size: 12px; }
+  .textTitle h2 {
+    font-size: 15px; }
+  .textTitle p {
+    font-size: 10px; }
+  .textTitle ul li {
+    font-size: 10px; }
+  .moreProducts h2 {
+    font-size: 15px;
+    letter-spacing: 2px; }
+  .moreProducts .moreProductsAll #jsonSlider .removePicture3 {
+    display: none; }
+  .moreProducts .moreProductsAll #jsonSlider div {
+    width: 90%; }
+    .moreProducts .moreProductsAll #jsonSlider div p {
+      font-size: 9px; }
+  .moreProducts .moreProductsAll button {
+    font-size: 15px;
+    padding: 0 9px 0 6px; }
+  .moreProducts .moreProductsAll #rightArrow {
+    padding: 0 7px 0 8px; }
+  .form .login form div {
+    flex-direction: column;
+    align-items: flex-start; }
+    .form .login form div label {
+      font-size: 9.99px;
+      letter-spacing: normal; }
+    .form .login form div input {
+      font-size: 10px;
+      width: 95%; }
+  .form .login form p {
+    letter-spacing: .5px; }
+  .form .login form button {
+    font-size: 11px; }
+  .form .benefits {
+    padding: 0; }
+    .form .benefits p {
+      font-size: 10px; }
+    .form .benefits h3 {
+      font-size: 11px;
+      letter-spacing: 2px;
+      margin-bottom: 15px; }
+  footer nav ul li a {
+    font-size: 7px; }
+  footer nav ul li:first-child {
+    padding-right: 15px; }
+  footer nav ul li:nth-child(2) {
+    padding-right: 20px; }
+  footer .newsletter {
+    width: 90%; }
+    footer .newsletter h4 {
+      font-size: 9px;
+      letter-spacing: 2px; }
+    footer .newsletter div input {
+      padding: 8px 5px;
+      font-size: 10px; }
+    footer .newsletter div button {
+      padding: 8px;
+      font-size: 10px; } }

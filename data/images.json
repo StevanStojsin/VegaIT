@@ -1,0 +1,34 @@
+[
+    {
+        "path": "img/beige.png",
+        "description": "Beige coat"
+    },
+    {
+        "path": "img/grey.png",
+        "description": "Grey coat"
+    },
+    {
+        "path": "img/red.png",
+        "description": "Red coat"
+    },
+    {
+        "path": "img/blue.png",
+        "description": "Blue coat"
+    },
+    {
+        "path": "img/beige.png",
+        "description": "peta"
+    },
+    {
+        "path": "img/grey.png",
+        "description": "sesta"
+    },
+    {
+        "path": "img/red.png",
+        "description": "sedma"
+    },
+    {
+        "path": "img/blue.png",
+        "description": "osma"
+    }
+]
